@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Glow - Cosmetic Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cart.css">
+</head>
+
+<body>
+    <header class="header-top py-3">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <div class="logo-area">
+                <a href="index.html" class="brand-name fs-2">Candy Glow Cosmetic</a>
+            </div>
+
+            <div class="search-area flex-grow-1 mx-md-4 order-3 order-md-2 mt-3 mt-md-0">
+                <div class="position-relative">
+                    <input type="text" class="form-control shadow-sm custom-search" placeholder="Search products...">
+                    <i class="fas fa-search position-absolute search-icon"></i>
+                </div>
+            </div>
+
+            <div class="icon-group d-flex align-items-center order-2 order-md-3">
+                <a href="cart.html" class="position-relative mx-3 text-decoration-none">
+                    <i class="fas fa-shopping-cart text-white"></i>
+                    <span class="badge-cart">0</span>
+                </a>
+
+                <div id="auth-section" class="dropdown">
+                    <a href="login.html" id="login-link" class="text-decoration-none text-white fw-bold me-2">Sign
+                        In</a>
+                    <div id="user-logged" class="d-none dropdown">
+                        <i class="fas fa-user text-white cursor-pointer" data-bs-toggle="dropdown"></i>
+                        <span id="user-name-display" class="me-2 fw-bold text-white cursor-pointer"
+                            data-bs-toggle="dropdown">Username</span>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+                            <li><a class="dropdown-item" href="profile.html"><i class="fas fa-id-card me-2"></i>
+                                    Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#" id="logout-btn"><i
+                                        class="fas fa-sign-out-alt me-2"></i>
+                                    Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="secondary-nav sticky-top shadow-sm">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <div class="container my-5">
+            <h1 class="cart-title mb-4">Shopping Cart</h1>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="cart-header d-flex text-white p-3 rounded-3 mb-3">
+                        <span style="flex: 2;">Product</span>
+                        <span style="flex: 1;" class="text-center">Quantity</span>
+                        <span style="flex: 1;" class="text-end pe-4">Total</span>
+                    </div>
+
+                    <div id="cart-list">
+                        <div class="cart-item d-flex align-items-center p-3 mb-3">
+                            <div class="d-flex align-items-center" style="flex: 2;">
+                                <img src="../img/toner.png" class="product-img me-3">
+                                <span class="product-name">Mineral Spray</span>
+                            </div>
+
+                            <div class="quantity-box d-flex align-items-center justify-content-center" style="flex: 1;">
+                                <button class="qty-btn">-</button>
+                                <span class="mx-3 fw-bold">1</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-end" style="flex: 1;">
+                                <span class="fw-bold me-3">$25</span>
+                                <button class="btn btn-link p-0 text-dark">
+                                    <i class="fas fa-trash-alt fs-5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="order-summary p-4">
+                        <h4 class="summary-title mb-4">Order Information:</h4>
+
+                        <div class="summary-row d-flex justify-content-between mb-2">
+                            <span>Amount:</span>
+                            <span class="fw-bold">$75</span>
+                        </div>
+                        <div class="summary-row d-flex justify-content-between mb-2">
+                            <span>Discount:</span>
+                            <span class="fw-bold">$0</span>
+                        </div>
+                        <div class="summary-row d-flex justify-content-between mb-4 mt-2 border-top pt-2">
+                            <span class="fs-5">Total:</span>
+                            <span class="fs-5 fw-bold">$75</span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="summary-title mb-2 d-block">Order note:</label>
+                            <textarea class="form-control border-0 rounded-4" rows="5"></textarea>
+                        </div>
+
+                        <button class="btn btn-pay w-100 py-3 fw-bold">PAY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto">
+        <div class="container text-center">
+            <div class="footer-brand mb-3">(Candy Glow Cosmetic)</div>
+            <div class="footer-links mb-3">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="social-icons mb-3">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 CANDY GLOW COSMETIC. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

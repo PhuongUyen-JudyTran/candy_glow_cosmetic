@@ -1,0 +1,145 @@
+:root {
+    --primary-pink: #FFB6D9;
+    --dark-pink: #E85D8A;
+    --light-pink: #FAE8F0;
+    --pale-pink: #F4D9E8;
+    --text-color: #333;
+    --light-bg: #FFF5FA;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-top { background-color: var(--primary-pink); }
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+}
+
+.search-area { max-width: 700px; } 
+
+.custom-search {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.search-icon {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dark-pink);
+}
+
+.badge-cart {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--dark-pink);
+    color: white;
+    font-size: 10px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.cursor-pointer { cursor: pointer; }
+
+.dropdown-menu {
+    z-index: 2000 !important; 
+    margin-top: 10px !important; 
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-pink);
+    color: var(--dark-pink);
+    border-radius: 8px;
+}
+
+.secondary-nav { 
+    background-color: var(--light-pink); 
+     z-index: 1020;
+}
+.secondary-nav .nav-link {
+    color: var(--dark-pink);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 25px;
+    transition: 0.3s;
+}
+.secondary-nav .nav-link:hover { color: var(--primary-pink); }
+
+.main-banner { border-radius: 30px; overflow: hidden; }
+.main-banner img { width: 100%; height: auto; display: block; }
+
+.section-title {
+    background-color: var(--light-pink);
+    color: var(--dark-pink);
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.product-card {
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.product-card:hover { transform: translateY(-10px); }
+
+.img-large-wrapper { height: 600px; }
+.img-small-wrapper { height: 288px; }
+
+.img-large-wrapper img, .img-small-wrapper img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+.best-seller-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #444;
+    font-weight: bold;
+    z-index: 5;
+}
+
+
+footer { background-color: var(--light-pink); padding: 40px 0; color: var(--dark-pink); }
+.footer-links a { color: var(--text-color); text-decoration: none; margin: 0 10px; }
+
+@media (max-width: 768px) {
+    .logo-area {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .search-area {
+        width: 100% !important;
+        order: 2 !important; 
+        margin: 0 0 15px 0 !important;
+    }
+
+    .icon-group {
+        width: 100% !important;
+        justify-content: center !important;
+        order: 3 !important;
+    }
+    .brand-name {
+        font-size: 1.8rem !important;
+    }
+}

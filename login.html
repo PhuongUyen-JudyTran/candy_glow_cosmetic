@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Candy Glow Cosmetic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style_register.css">
+</head>
+
+<body class="register-body">
+
+    <header class="register-header">
+        <div class="container-fluid px-4">
+            <a href="index.html" class="text-decoration-none back-btn">
+                <i class="fa-solid fa-angles-left"></i> Back
+            </a>
+        </div>
+    </header>
+
+    <main class="container py-5 flex-grow-1 d-flex align-items-center">
+        <div class="row align-items-center w-100">
+            <div class="col-lg-5 text-center order-2 order-lg-1">
+                <img src="../img/logo.png" alt="Candy Glow Logo" class="img-fluid logo-animation">
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-block text-center order-lg-2">
+                <div class="vertical-line"></div>
+            </div>
+
+            <div class="col-lg-6 px-lg-5 order-1 order-lg-3">
+                <h1 class="register-title mb-5 text-center">SIGN IN</h1>
+                <form id="loginForm">
+                    <div class="mb-5 position-relative">
+                        <span class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                            <i class="fas fa-user text-dark"></i>
+                        </span>
+                        <input type="text" class="form-control custom-input ps-5" placeholder="Username" required>
+                    </div>
+
+                    <div class="mb-5 position-relative">
+                        <span class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                            <i class="fas fa-lock text-dark"></i>
+                        </span>
+                        <input type="password" class="form-control custom-input ps-5" placeholder="Password" required>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <a href="register.html" class="btn btn-signin flex-fill">Sign Up</a>
+                        <button type="submit" class="btn btn-signup flex-fill">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="register-footer text-center">
+        <div class="container text-center">
+            <div class="footer-brand mb-3">(Candy Glow Cosmetic)</div>
+            <div class="footer-links mb-3">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="social-icons mb-3">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 CANDY GLOW COSMETIC. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

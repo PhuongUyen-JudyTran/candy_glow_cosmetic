@@ -1,0 +1,27 @@
+.text-dark-pink { color: #E85D8A; }
+.bg-light-pink { background-color: #FAE8F0; }
+.text-pink { color: #FFB6D9; }
+
+.profile-avatar-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info-list i {
+    width: 25px;
+    font-size: 1.2rem;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+

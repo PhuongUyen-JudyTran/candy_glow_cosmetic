@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Glow - Cosmetic Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_shop.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-top py-3">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <div class="logo-area">
+                <a href="index.html" class="brand-name fs-2">Candy Glow Cosmetic</a>
+            </div>
+            <div class="search-area flex-grow-1 mx-md-4 order-3 order-md-2 mt-3 mt-md-0">
+                <div class="position-relative">
+                    <input type="text" class="form-control shadow-sm custom-search" placeholder="Search products...">
+                    <i class="fas fa-search position-absolute search-icon"></i>
+                </div>
+            </div>
+            <div class="icon-group d-flex align-items-center order-2 order-md-3">
+                <a href="cart.html" class="position-relative mx-3 text-decoration-none">
+                    <i class="fas fa-shopping-cart text-white"></i>
+                    <span class="badge-cart">0</span>
+                </a>
+                <div id="auth-section" class="dropdown">
+                    <a href="login.html" id="login-link" class="text-decoration-none text-white fw-bold me-2">Sign
+                        In</a>
+                    <div id="user-logged" class="d-none dropdown">
+                        <i class="fas fa-user text-white cursor-pointer" data-bs-toggle="dropdown"></i>
+                        <span id="user-name-display" class="me-2 fw-bold text-white cursor-pointer"
+                            data-bs-toggle="dropdown">Username</span>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+                            <li><a class="dropdown-item" href="profile.html"><i class="fas fa-id-card me-2"></i>
+                                    Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#" id="logout-btn"><i
+                                        class="fas fa-sign-out-alt me-2"></i>
+                                    Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav sticky-top shadow-sm">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Grid -->
+    <main class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/toner.png" alt="Toner">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Toner</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/spray.png" alt="Mineral Spray">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Mineral Spray</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/toner.png" alt="Toner">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Toner</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/serum.png" alt="Serum">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Serum</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/night.png" alt="Night Cream">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Night Cream</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/body_cream.png" alt="Body Cream">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Body Cream</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/day.png" alt="Day Cream">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Day Cream</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-item text-center">
+                    <div class="product-img-box">
+                        <img src="../img/spray.png" alt="Spray">
+                    </div>
+                    <div class="product-info p-3">
+                        <h5 class="product-name">Spray</h5>
+                        <p class="product-price fw-bold">$25</p>
+                        <button class="btn btn-add-cart rounded-pill w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center">
+            <div class="footer-brand mb-3">(Candy Glow Cosmetic)</div>
+            <div class="footer-links mb-3">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="social-icons mb-3">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 CANDY GLOW COSMETIC. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/add.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

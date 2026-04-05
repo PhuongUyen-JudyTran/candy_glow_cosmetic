@@ -1,0 +1,119 @@
+:root {
+    --bg-pink: #FCE4EC;
+    --dark-pink: #EF2D8E;
+    --light-pink: #F8BBD0;
+    --input-bg: #FFFFFF;
+}
+
+body.register-body {
+    background-color:rgb(255, 214, 222);
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-pink);
+
+}
+
+
+.register-header {
+    background-color: var(--light-pink);
+    width: 100%;
+    padding: 20px;
+}
+
+/* Nút Back */
+.back-btn {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.register-container {
+    background-color: transparent;
+}
+
+.register-title {
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* Tùy chỉnh Input */
+.custom-input {
+    border-radius: 15px;
+    border: none;
+    padding: 12px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.custom-input:focus {
+    box-shadow: 0 0 10px rgba(239, 45, 142, 0.2);
+    border: 1px solid var(--light-pink);
+}
+
+.btn-signin {
+    background-color: var(--light-pink);
+    color: var(--dark-pink);
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn-signup {
+    background-color: var(--dark-pink);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btn-signup:hover {
+    background-color: #d81b60;
+    color: white;
+    transform: scale(1.05);
+}
+
+.vertical-line {
+    width: 2px;
+    height: 400px;
+    background-color: var(--light-pink);
+    margin: 0 auto;
+}
+
+.logo-animation {
+    max-width: 450px;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+
+footer.register-footer {
+    background-color:#FAE8F0;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+} 
+.footer-brand { font-family: 'Poppins', sans-serif; font-weight: bold; }
+.footer-links a {
+    text-decoration: none;
+    color: #777;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+.social-icons i {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    color: #2c3e50;
+}
+
+@media (max-width: 992px) {
+    .register-title { text-align: center; }
+    .logo-animation { margin-top: 50px; max-width: 300px; }
+    .btn { font-size: 0.9rem; }
+}
+h1{
+    text-align: center;
+}

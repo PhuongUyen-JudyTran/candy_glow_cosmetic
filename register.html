@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Candy Glow Cosmetic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style_register.css">
+</head>
+
+<body class="register-body">
+
+    <header class="register-header">
+        <div class="container-fluid px-4">
+            <a href="index.html" class="text-decoration-none back-btn">
+                <i class="fa-solid fa-angles-left"></i> Back
+            </a>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <div class="row align-items-center register-container">
+            <div class="col-lg-6 px-lg-5">
+                <h1 class="register-title mb-1">SIGN UP</h1>
+                <form id="registerForm" class="p-4">
+                    <div class="mb-1">
+                        <input type="text" id="username" class="form-control custom-input" placeholder="Username">
+                        <small class="error-msg text-danger ms-2"></small>
+                    </div>
+
+                    <div class="mb-1">
+                        <input type="text" id="fullname" class="form-control custom-input" placeholder="Full name">
+                        <small class="error-msg text-danger ms-2"></small>
+                    </div>
+
+                    <div class="mb-1">
+                        <input type="tel" id="phone" class="form-control custom-input" placeholder="Phone">
+                        <small class="error-msg text-danger ms-2"></small>
+                    </div>
+
+                    <div class="mb-1">
+                        <input type="email" id="email" class="form-control custom-input" placeholder="Email">
+                        <small class="error-msg text-danger ms-2"></small>
+                    </div>
+
+                    <div class="mb-1">
+                        <input type="password" id="password" class="form-control custom-input" placeholder="Password">
+                        <small class="error-msg text-danger ms-2"></small>
+                    </div>
+
+                    <div class="mb-1">
+                        <input type="password" id="confirmPass" class="form-control custom-input"
+                            placeholder="Confirm Password">
+                        <small class="error-msg text-danger ms-2"></small>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <a href="login.html" class="btn btn-signin flex-fill">Sign In</a>
+                        <button type="submit" class="btn btn-signup flex-fill">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-block text-center">
+                <div class="vertical-line"></div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <img src="../img/logo.png" alt="Candy Glow Logo" class="img-fluid logo-animation">
+            </div>
+        </div>
+    </main>
+
+    <footer class="register-footer text-center">
+        <div class="container text-center">
+            <div class="footer-brand mb-3">(Candy Glow Cosmetic)</div>
+            <div class="footer-links mb-3">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="social-icons mb-3">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 CANDY GLOW COSMETIC. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

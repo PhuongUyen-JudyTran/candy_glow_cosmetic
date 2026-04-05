@@ -1,0 +1,48 @@
+
+.contact-card, .info-card {
+    background-color: #FFD1DC; 
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+
+.form-control {
+    background-color: #fff !important;
+    color: #333;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Nút Submit */
+.btn-submit {
+    background-color: #f06292;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #EF2D8E;
+    color: white;
+    transform: scale(1.05);
+}
+
+.icon-box {
+    width: 35px;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.info-card span {
+    color: #2c3e50;
+}
+
+.map-container {
+    height: 200px;
+    background-color: #eee;
+}
